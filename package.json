@@ -2,18 +2,18 @@
   "name": "family-budget-manager-dbserver",
   "version": "4.2.0",
   "private": true,
-  "description": "Turso persistence server for Family Budget Manager v4.2.0",
+  "description": "Turso persistence server for Family Budget Manager v4.2",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "node --test tests/*.test.js"
   },
   "dependencies": {
-    "express": "^5.1.0",
-    "helmet": "^8.1.0",
-    "express-rate-limit": "^8.0.1"
+    "express": "5.2.1",
+    "helmet": "8.3.0",
+    "express-rate-limit": "8.6.0"
   },
   "engines": {
-    "node": ">=22.5.0"
+    "node": "22.x"
   }
 }
