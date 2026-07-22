@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: family-budget-manager-db
+    runtime: node
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22.23.0
+      - key: TURSO_DATABASE_URL
+        sync: false
+      - key: TURSO_AUTH_TOKEN
+        sync: false
+      - key: DB_SERVER_SECRET
+        sync: false
+      - key: KEEP_SNAPSHOTS
+        value: 30
